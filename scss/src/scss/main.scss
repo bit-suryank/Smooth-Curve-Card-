@@ -1,0 +1,48 @@
+$bgcolor: white;
+
+.App{
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    transform: translate(100% , -50%);
+}
+
+body{
+    background: rgb(157, 88, 221);
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 250px;
+    height: 300px;
+    border-radius: 32px;
+    left: 50%;
+    transform: translate(100%, 0);
+    background: $bgcolor;
+}
+
+.photo{
+    height: 50%;
+    background-color: $bgcolor;
+    border-radius: 32px 32px 0 ;
+
+    img {
+        position: absolute;
+        border-radius: 32px 32px 0 0;
+        width: 100%;
+        height: 60%;
+        right: 0%;
+        z-index: 0;
+    }
+}
+
+.overLeaf {
+    width: 100%;
+    height: 60%;
+    border-radius: 0 32px 32px 32px;
+    background-color: $bgcolor;
+    z-index: 1;
+}
+
